@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه من</title>
+    <title>رزومه سمانه مالزیری</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -33,7 +33,16 @@
         <div class="relative glass-effect rounded-2xl shadow-xl overflow-hidden min-h-[80vh]">
 
             <!-- نوار بالایی -->
-            <div class="bg-slate-700 h-32 relative flex items-center px-6">
+            <div class="fixed bg-slate-700 h-32 relative flex items-center px-6">
+                <button id="toggleLanguage"
+                    class="fixed top-3 right-4 p-1 font-bold text-white bg-blue-600 rounded-xl  hover:bg-blue-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+                    </svg>
+
+                </button>
                 <!-- عکس پروفایل -->
                 <div class="absolute -bottom-16 right-6">
                     <img src="samaneh.jpg" alt="Profile"
@@ -41,8 +50,8 @@
                 </div>
                 <!-- اطلاعات داخل هدر -->
                 <div class="text-white ml-auto w-full pr-40 flex flex-col gap-3">
-                    <h1 class="text-3xl font-bold">سمانه مالزیری</h1>
-                    <h4 class="text-base mb-1">برنامه نویس <span class="text-orange-500">/ </span>توسعه دهنده </h4>
+                    <h1 class="text-3xl font-bold" data-lang-key="fullname"></h1>
+                    <h4 class="text-base mb-1" data-lang-key="title"></h4>
                 </div>
             </div>
 
@@ -51,38 +60,37 @@
 
                 <!-- مشخصات فردی و اطلاعات تماس -->
                 <section>
-                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-3">
-                        مشخصات فردی و اطلاعات تماس
-                    </h2>
+                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-3"
+                        data-lang-key="personal_info_title"></h2>
                     <ul class="space-y-3 text-gray-700">
                         <li class="flex items-center gap-2">
                             <span>👤</span>
-                            <span>سن : 33 سال</span>
+                            <span data-lang-key="age"></span>
                         </li>
                         <li class="flex items-center gap-2">
                             <span>📱</span>
-                            <span>موبایل : <a href="tell:09307794276"
-                                    class="hover:text-orange-500">09307794276</a></span>
+                            <span data-lang-key="mobile"></span> <a data-lang-key="mobile_number"
+                                href="tell:09307794276" class="hover:text-orange-500"></a>
                         </li>
                         <li class="flex items-center gap-2">
                             <span>📧</span>
-                            <span>ایمیل : <a href="mailto:samanehmalziri@gmail.com"
-                                    class="hover:text-orange-500 cursor-pointer">samanehmalziri@gmail.com</a></span>
+                            <span data-lang-key="email"></span><a href="mailto:samanehmalziri@gmail.com"
+                                class="hover:text-orange-500 cursor-pointer">samanehmalziri@gmail.com</a>
                         </li>
                         <li class="flex items-center gap-2">
                             <span>📍</span>
-                            <span>محل سکونت : البرز ، فردیس</span>
+                            <span data-lang-key="location"></span>
                         </li>
                         <li class="flex items-center gap-2">
                             <span>🔗</span>
-                            <span><a href="https://www.linkedin.com/in/malziri/"
-                                    class="hover:text-orange-500 ">malziri</a> :
-                                Linkedin</span>
+                            <span data-lang-key="linkdin"></span><a href="https://www.linkedin.com/in/malziri/"
+                                class="hover:text-orange-500 ">malziri</a>
                         </li>
                         <li class="flex items-center gap-2">
                             <span class="text-gray-800">💻</span>
-                            <span><a href="https://github.com/samaneh1371" class="hover:text-orange-500 ">samaneh1371</a> :
-                                GitHub</span>
+                            <span data-lang-key="github"></span><a href="https://github.com/samaneh1371"
+                                class="hover:text-orange-500 ">samaneh1371</a>
+
                         </li>
                     </ul>
                 </section>
@@ -90,29 +98,15 @@
 
                 <!-- درباره من -->
                 <section>
-                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-3">درباره من</h2>
-                    <p class="text-gray-700 text-base leading-relaxed">
-                        من یک برنامه‌نویس با 3 سال و 7 ماه تجربه در زمینه برنامه‌نویسی <span class="text-orange-700">
-                            ++C
-                        </span> و استفاده از فریمورک <span class="text-orange-700">Qt</span> هستم. در طول
-                        این مدت، با متدولوژی‌های <span class="text-orange-700">Agile</span> و <span
-                            class="text-orange-700">Scrum</span> کار کرده‌ام و به کارهای تیمی و محیط‌های پویا علقه‌مندم.
-                        همواره در
-                        تلاش برای افزایش دانش و گسترش توانایی‌های برنامه‌نویسی خود هستم. علوه بر این، از چالش‌ها و حل
-                        مسائل لذت
-                        می‌برم و با مسئولیت‌پذیری بالا، همواره تسک‌ها و پروژه‌های خود را به پایان می‌رسانم. توانایی من در
-                        کار
-                        گروهی و ارتباط مؤثر با اعضای تیم، به من این امکان را می‌دهد که در پروژه‌های مختلف به خوبی عمل
-                        کنم و به
-                        نتایج مطلوب دست یابم. با اشتیاق به یادگیری و به‌روز نگه‌داشتن مهارت‌هایم، آماده‌ام تا در
-                        پروژه‌های جدید
-                        و <span class="text-orange-700">چالش‌برانگیز</span> شرکت کنم و به رشد و پیشرفت تیم کمک کنم.
+                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-3 " data-lang-key="aboutme"></h2>
+                    <p class="text-gray-700 text-base leading-relaxed" data-lang-key="aboutme_text">
+
                     </p>
                 </section>
 
                 <!-- مهارت‌ها -->
                 <section>
-                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-3">مهارت‌ها</h2>
+                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-3" data-lang-key="skills"></h2>
                     <ul class="flex flex-wrap gap-3 text-base">
                         <li class="bg-orange-100 text-blue-700 border border-orange-200 px-4 py-2 rounded-full">Windows
                             Api</li>
@@ -139,30 +133,62 @@
 
                 <!-- تحصیلات -->
                 <section>
-                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-3">تحصیلات</h2>
+                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-3" data-lang-key="education"></h2>
                     <div class="text-base flex flex-col gap-2">
                         <span>
-                            <p class="font-medium">کارشناسی - حقوق</p>
-                            <p class="text-gray-600">دانشگاه پیام نور لرستان - واحد خرم آباد <span
-                                    class="text-orange-700 mx-2"> | </span> 1398 - 1400</p>
+                            <p class="font-medium" data-lang-key="edu_dgree"></p>
+                            <p class="text-gray-600" data-lang-key="edu_unit"></p>
+                            <p class="text-gray-600" data-lang-key="edu_date"></p>
                         </span>
                         <span>
-                            <p class="font-medium">کارشناسی - مهندسی کامپیوتر - سخت افزار</p>
-                            <p class="text-gray-600">دانشگاه صنعتی جندی شاپور <span class="text-orange-700 mx-2"> |
-                                </span> 1390 - 1395</p>
+                            <p class="font-medium" data-lang-key="edu_dgree2"></p>
+                            <p class="text-gray-600" data-lang-key="edu_unit2"></p>
+                            <p class="text-gray-600" data-lang-key="edu_date2"></p>
                         </span>
                     </div>
                 </section>
 
                 <!-- سابقه شغلی -->
                 <section>
-                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-3">سابقه شغلی</h2>
+                    <h2 class="text-xl font-semibold border-b border-gray-300 pb-2 mb-3" data-lang-key="prfo_expr"></h2>
                     <div class="space-y-4 text-base">
                         <div class="mb-6">
-                            <h3 class="font-medium">کارشناس توسعه نرم افزار <span class="text-orange-700">@ <a
-                                        href="https://padvish.com/en-us/">شرکت نرم افزاری امن پرداز</a></span></h3>
-                            <p class="">بهمن 1400 - تا کنون <span class="text-orange-700"> | </span> ایران ، گرمدره</p>
-                            <ul class="list-disc pl-5 mt-3 text-gray-600">
+                            <div class="flex gap-1">
+                                <h3 class="font-medium" data-lang-key="job_title"></h3>
+                                <span class="text-orange-700"> @ </span>
+                                <a class="text-orange-700" href="https://padvish.com/en-us/"
+                                    data-lang-key="job_name"></a>
+                            </div>
+                            <div class="flex gap-1">
+                                <p class="" data-lang-key="job_date"></p>
+                                <span class="text-orange-700"> | </span>
+                                <p class="" data-lang-key="job_loc"></p>
+                            </div>
+                            <!-- بخش انگلیسی -->
+                            <ul id="en-content" class="language-content hidden list-disc pl-5 mt-3 text-gray-600">
+                                <li class="mb-1"><span class="text-orange-700">Shell Extension:</span> Development and
+                                    optimization of shell extensions to enhance efficiency and security</li>
+                                <li class="mb-1"><span class="text-orange-700">Application Development:</span> Design
+                                    and implementation of user-friendly applications with a focus on security and
+                                    usability</li>
+                                <li class="mb-1"><span class="text-orange-700">Statistical Charting:</span> Creation and
+                                    analysis of statistical charts to visually present data and results</li>
+                                <li class="mb-1"><span class="text-orange-700">Secure Data Transmission:</span>
+                                    Implementation of security protocols to ensure secure data transfer</li>
+                                <li class="mb-1">Proficient in database-level programming and optimizing software
+                                    communication with <span class="text-orange-700">databases</span></li>
+                                <li class="mb-1">Full mastery of <span class="text-orange-700">Git</span> version
+                                    control tools for effective code management and team collaboration</li>
+                                <li class="mb-1">Familiar with <span class="text-orange-700">QMake</span> and <span
+                                        class="text-orange-700">CMake</span> build systems to facilitate software
+                                    building/deployment and testing tools</li>
+                                <li>Strong skills in technical research and writing specialized documentation in <span
+                                        class="text-orange-700">R&D</span> (Research and Development). These experiences
+                                    have enabled me to enhance my technical and analytical skills and achieve notable
+                                    successes in complex and challenging projects</li>
+                            </ul>
+                            <!-- بخش فارسی -->
+                            <ul id="fa-content" class="language-content list-disc pl-5 mt-3 text-gray-600">
 
                                 <li class="mb-1"><span class="text-orange-700">شل اکستنشن:</span> توسعه و بهینه‌سازی شل
                                     اکستنشن‌ها برای
@@ -185,12 +211,15 @@
                                     <span class="text-orange-700">دیتابیس</span>
                                 </li>
 
-                                <li class="mb-1">تسلط کامل به ابزارهای کنترل نسخه <span class="text-orange-700">Git</span>
+                                <li class="mb-1">تسلط کامل به ابزارهای کنترل نسخه <span
+                                        class="text-orange-700">Git</span>
                                     برای مدیریت
                                     موثر کد و همکاری تیمی</li>
 
-                                <li class="mb-1">آشنا به سیستم های ساخت پروژه <span class="text-orange-700">QMake</span> و
-                                    <span class="text-orange-700">CMake</span> جهت تسهیل بیلد و استقرار نرم افزار و آشنا به
+                                <li class="mb-1">آشنا به سیستم های ساخت پروژه <span class="text-orange-700">QMake</span>
+                                    و
+                                    <span class="text-orange-700">CMake</span> جهت تسهیل بیلد و استقرار نرم افزار و آشنا
+                                    به
                                     ابزارهای تست
                                 </li>
 
@@ -204,26 +233,28 @@
                             </ul>
                         </div>
                         <div class="mb-6">
-                            <h3 class="font-medium">مسئول تولید محتوا<span class="text-orange-700"> @ <a
-                                        href="https://www.kavyab.com/">مجله آنلاین سبک زندگی کاویاب</a></span></h3>
-                            <p class="">مهر 1396 - آبان 1399 <span class="text-orange-700"> | </span> ایران ، تهران</p>
+                            <div class="flex gap-1">
+                                <h3 class="font-medium" data-lang-key="job_title2"></h3>
+                                <span class="text-orange-700"> @ </span>
+                                <a class="text-orange-700" href="https://www.kavyab.com/" data-lang-key="job_name2"></a>
+                            </div>
+                            <div class="flex gap-1">
+                                <p class="" data-lang-key="job_date2"></p>
+                                <span class="text-orange-700"> | </span>
+                                <p class="" data-lang-key="job_loc2"></p>
+                            </div>
                             <ul class="list-disc pl-5 mt-2 text-gray-600">
-                                <li>در زمینه تولید محتوا برای سایت کاویاب، مقالت و مطالب تخصصی مرتبط با فناوری‌های روز
-                                    را تدوین و
-                                    منتشر می‌کردم. این مسئولیت شامل تحقیق دقیق بر روی موضوعات مختلف تکنولوژی، تحلیل
-                                    روندهای بازار، و
-                                    ارائه توضیحات ساده و قابل فهم برای مخاطبان تخصصی و عمومی بود. هدف اصلی، انتقال
-                                    مفاهیم پیچیده
-                                    فناوری به زبان ساده و کاربردی با حفظ دقت علمی و فنی بود.</li>
+                                <li data-lang-key="job_desc"></li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
-                <footer class="text-center py-1 text-gray-600" >© 2025 Samaneh Malziri - All Rights Reserved</footer>
+                <footer class="text-center py-1 text-gray-600" data-lang-key="footer"></footer>
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
